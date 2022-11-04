@@ -1,0 +1,36 @@
+.header {
+    border-bottom: 4mm ridge $second;
+}
+
+.header_wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 55px;
+    padding-bottom: 55px;
+}
+
+.header__menu {
+    padding: 0;
+    margin: 0;
+
+}
+.logo_size {
+    height: 70px;
+}
+
+@media (max-width: 768px) {
+    .header_wrap {
+        flex-direction: column;
+        justify-content: flex-start;
+        padding-top: 25px;
+        padding-bottom: 25px;
+       
+    }
+    .header__menu {
+        margin-top: 20px;
+    }
+
+}
+

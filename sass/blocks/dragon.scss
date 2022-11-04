@@ -1,0 +1,145 @@
+$text-color: #cacaca;
+
+.dragon {
+    background: url('../img/dinosaur.jpg') center top no-repeat ;
+    background-size: cover;
+}
+
+.dragon_wrap{
+    padding-top: 255px;
+    padding-bottom: 250px;
+
+}
+
+.dragon_info{
+    max-width: 650px;
+    margin-right: auto;
+
+    
+   
+}
+
+
+
+
+.dragon_title{
+    font-size: 85px;
+    font-family: 'Open Sans';
+    color: $white;
+    font-weight: 1000;
+    text-transform: uppercase;
+    line-height: 1;
+    margin: 0;
+    text-shadow: 1px 1px 5px black, 0 0 0.9em rgb(6, 132, 102), 0 0 0.9em black;
+    
+}
+
+.dragon_lititle{
+    font-size: 43px;
+    display: block;
+    font-family: 'Open Sans';
+    color: $white;
+    font-weight: 800;
+    text-transform: uppercase;
+    line-height: 1;
+    text-shadow: 1px 1px 5px black, 0 0 0.9em rgb(6, 132, 102), 0 0 0.9em black;
+    
+}
+.dragon_green{
+    color: $second;
+    font-weight: 1000;
+    
+}
+.dragon_text{
+    font-size: 18px;
+    display: block;
+    font-family: 'Open Sans';
+    color: $text-color;
+    font-weight: 800;
+    text-transform: uppercase;
+    line-height: 1;
+    margin: 15px 0;
+    text-shadow: 1px 1px 5px black, 0 0 0.9em rgb(6, 132, 102), 0 0 0.9em black;
+}
+.dragon_button{
+    @include button(){
+        display: inline-block;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-right: 25px;
+    };
+
+}
+.last_button{
+    margin-right: 0;
+    border-color: $white;
+    background-color: transparent;
+    
+}
+
+@media (max-width: 980px) {
+
+    .dragon{
+        // background: none;
+        
+    }
+
+    .dragon_wrap{
+        padding-top: 150px;
+        padding-bottom: 100px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .dragon{
+        // background: none;
+        
+    }
+
+    .dragon_wrap{
+        padding-top: 150px;
+        padding-bottom: 100px;
+    }
+
+    .dragon_title{
+        font-size: 50px;
+    }
+
+    .dragon_lititle{
+        font-size: 24px;
+    }
+
+    .dragontext {
+        font-size: 16px;
+    }
+
+}
+
+@media (max-width: 480px) {
+
+   
+
+    .dragon_wrap{
+        padding-top: 150px;
+        padding-bottom: 100px;
+    }
+
+    .dragon_title{
+        font-size: 40px;
+    }
+
+    .dragon_lititle{
+        font-size: 20px;
+    }
+
+    .dragon_text {
+        font-size: 14px;
+    }
+
+    .dragon_button{
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+}
