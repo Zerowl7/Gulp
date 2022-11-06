@@ -1,0 +1,82 @@
+.dangerous {
+    background-color: $second;
+}
+
+.dangerous_title {
+    margin-top: 0;
+}
+
+.dangerous_wrap {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    display: flex;
+    
+}
+
+.left_side {
+    flex-basis: 280px;
+    margin-right: 115px;
+}
+
+.right_side {
+    flex-grow: 1;
+}
+
+.dangerous_title {
+    font-size: 34px;
+    font-family: 'Open Sans';
+    color: $black;
+    font-weight: 900;
+    text-transform: uppercase;
+    line-height: 1;
+    margin-top: 20px;
+
+    &::before {
+
+        content: '';
+        width: 100px;
+        height: 2px;
+        background-color: $black;
+        display: block;
+        margin-bottom: 20px;
+    }
+}
+
+.dangerous_description {
+    font-size: 14px;
+    font-family: 'Open Sans';
+    color: $black;
+    font-weight: 500;
+    line-height: 1.1;
+    margin: 20px 0;
+}
+
+.dangerous_button {
+    @include button() {
+        display: inline-block;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-right: 25px;
+        background-color: $black;
+    }
+
+    ;
+}
+
+@media (max-width: 1000px) {
+    .left_side {
+        margin-right: 80px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .dangerous_wrap {
+        flex-direction: column;
+    }
+    .left_side {
+        margin-right: 80px;
+        margin-bottom: 25px;
+        flex-basis: auto;
+    }
+}

@@ -3,17 +3,48 @@ $text-color: #cacaca;
 .dragon {
     background: url('../img/dinosaur.jpg') center top no-repeat ;
     background-size: cover;
+    position: relative;
+    z-index: -1;
+
+
+    &::before{
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 50%;
+        height: 100%;
+        background: linear-gradient(-90deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.2) 25%,  rgba(0, 0, 0, 1) 100%,);
+        z-index: -1;
+    }
+
+    &::after{
+        content: "";
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        width: 50%;
+        height: 100%;
+        background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.2) 25%,  rgba(0, 0, 0, 1) 100%,);
+        z-index: 0;
+    }
+
+    
 }
 
 .dragon_wrap{
     padding-top: 255px;
     padding-bottom: 250px;
+    z-index: 2;
+
+    
 
 }
 
 .dragon_info{
     max-width: 650px;
     margin-right: auto;
+    z-index: 2;
 
     
    
@@ -31,7 +62,7 @@ $text-color: #cacaca;
     line-height: 1;
     margin: 0;
     text-shadow: 1px 1px 5px black, 0 0 0.9em rgb(6, 132, 102), 0 0 0.9em black;
-    
+    z-index: 2;
 }
 
 .dragon_lititle{
@@ -43,12 +74,12 @@ $text-color: #cacaca;
     text-transform: uppercase;
     line-height: 1;
     text-shadow: 1px 1px 5px black, 0 0 0.9em rgb(6, 132, 102), 0 0 0.9em black;
-    
+    z-index: 2;
 }
 .dragon_green{
     color: $second;
     font-weight: 1000;
-    
+    z-index: 2;
 }
 .dragon_text{
     font-size: 18px;
@@ -60,6 +91,7 @@ $text-color: #cacaca;
     line-height: 1;
     margin: 15px 0;
     text-shadow: 1px 1px 5px black, 0 0 0.9em rgb(6, 132, 102), 0 0 0.9em black;
+    z-index: 2;
 }
 .dragon_button{
     @include button(){
@@ -67,6 +99,7 @@ $text-color: #cacaca;
         margin-top: 20px;
         margin-bottom: 20px;
         margin-right: 25px;
+        z-index: 2;
     };
 
 }

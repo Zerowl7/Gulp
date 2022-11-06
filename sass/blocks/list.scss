@@ -1,0 +1,45 @@
+$listtext: rgb(225, 225, 225);
+
+.facts_list{
+
+}
+
+.facts_elements{
+
+    font-size: 18px;
+    font-family: 'Open Sans';
+    color: $listtext;
+    font-weight: 300;
+    list-style: none;
+    line-height: 1;
+    margin-top: 14px;
+
+    position: relative;
+
+    &::before{
+       content: ""; 
+       background-color: $second;
+       position: absolute;
+       width: 8px;
+       height: 2px;
+       left: -26px;
+       top: 50%;
+       transform: translateY(-50%);
+    }
+}
+
+.facts_button{
+    @include button(){
+        display: inline-block;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-right: 25px;
+    };
+    
+}
+
+@media (max-width: 480px) {
+    .facts_elements{
+        font-size: 14px;
+    }
+}

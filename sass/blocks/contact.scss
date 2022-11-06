@@ -1,0 +1,56 @@
+.contact {
+    background-color: $second;
+}
+
+.contact_wrap {
+    padding-top: 55px;
+    padding-bottom: 60px;
+}
+
+
+
+.contact_title {
+    font-size: 34px;
+    font-family: 'Open Sans';
+    color: $black;
+    font-weight: 1000;
+    text-transform: uppercase;
+    line-height: 1.1;
+    text-align: center;
+    margin: 25px 0 40px;
+
+    &::before {
+
+        content: '';
+        width: 100px;
+        height: 2px;
+        background-color: $black;
+        display: block;
+        margin-bottom: 20px;
+        margin: 0 auto 25px;
+
+
+    }
+
+
+}
+
+.contact_list{
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+.contact_form{
+    flex-basis: 535px;
+    
+    margin: 10px 70px;
+
+}
+
+.contact_map{
+    flex-grow: 1;
+    max-width: 570px;
+    
+    margin: 10px 0;
+}
